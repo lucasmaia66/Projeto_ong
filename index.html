@@ -13,11 +13,32 @@
     <header>
         <h1> ONG esperança</h1>
 
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="projetos.html">Projeto</a>
+        <nav class="menu">
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-hamburguer">
+        ☰
+    </label>
+
+    <ul class="menu-lista">
+        <li>
+            <a href="index.html">Início</a>
+        </li>
+
+        <li class="tem-submenu">
+            <a href="projetos.html">Projetos</a>
+
+            <ul class="submenu">
+                <li><a href="projetos.html">Projetos sociais</a></li>
+                <li><a href="projetos.html">Como ajudar</a></li>
+            </ul>
+        </li>
+
+        <li>
             <a href="cadastro.html">Cadastro</a>
-        </nav>
+        </li>
+    </ul>
+</nav>
     </header>
 
     <main>
@@ -34,6 +55,19 @@
             <p>email: contato@ong.org</p>
             <p>Telefone:(92) 99999-9999</p>
         </section>
+        <section id="feedback">
+    <h2>Status dos projetos</h2>
+
+    <span class="badge">Projeto ativo</span>
+
+    <div class="alerta sucesso">
+        ✓ Cadastro realizado com sucesso!
+    </div>
+
+    <div class="toast">
+        ✓ Informações salvas com sucesso.
+    </div>
+</section>
     
         
     </main>
