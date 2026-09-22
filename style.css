@@ -1,0 +1,80 @@
+:root {
+    --cor-primaria: #2563EB;
+    --cor-secundaria: #16A34A;
+    --cor-destaque: #F59E0B;
+    --cor-texto: #1F2937;
+    --cor-texto-claro: #6B7280;
+    --cor-fundo: #FFFFFF;
+    --cor-fundo-suave: #F3F4F6;
+    --cor-borda: #D1D5DB;
+    --fonte-grande: 2.5rem;
+    --fonte-titulo: 2rem;
+    --fonte-subtitulo: 1.5rem;
+    --fonte-normal: 1rem;
+    --fonte-pequena: 0.875rem;
+    --espaco-pequeno: 8px;
+    --espaco-medio: 16px;
+    --espaco-grande: 24px;
+    --espaco-maior: 32px;
+
+
+}
+h1 {
+    color: var(--cor-primaria);
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+main section {
+    grid-column: span 4;
+}
+
+@media (max-width: 1200px) {
+    main section {
+        grid-column: span 4;
+    }
+}
+
+@media (max-width: 1000px) {
+    main section {
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 900px) {
+    main section {
+        grid-column: span 12;
+    }
+}
+
+@media (max-width: 600px) {
+    main section {
+        grid-column: span 12;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    main section {
+        grid-column: span 12;
+        font-size: 0.875rem;
+    }
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
