@@ -1,3 +1,27 @@
+const projetos = [
+    {
+        titulo: "Campanha de alimentos",
+        descricao: "Arrecadação de alimentos para famílias da comunidade."
+    },
+    {
+        titulo: "Apoio escolar",
+        descricao: "Atividades educativas para crianças e adolescentes."
+    },
+    {
+        titulo: "Ação solidária",
+        descricao: "Distribuição de roupas e itens essenciais."
+    }
+];
+
+function criarProjetos() {
+    return projetos.map(projeto => `
+        <article class="projeto">
+            <h3>${projeto.titulo}</h3>
+            <p>${projeto.descricao}</p>
+        </article>
+    `).join("");
+}
+
 const routes = {
     inicio: `
         <section>
@@ -9,6 +33,10 @@ const routes = {
         <section>
             <h2>Projetos</h2>
             <p>Conheça os projetos desenvolvidos pela ONG.</p>
+            
+            <div class="lista-projetos">
+                 ${criarprojetos()}
+            </div>
         </section>
     `,
     cadastro: `
