@@ -56,7 +56,7 @@ function renderizarPagina(rota) {
 }
 
 function navegar(rota) {
-    history.pushState({ rota }, "", #${rota});
+    history.pushState({ rota }, "", "#" + rota);
     renderizarPagina(rota);
 }
 

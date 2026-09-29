@@ -314,3 +314,25 @@ button:disabled {
     border-radius: 6px;
     max-width: 350px;
 }
+/* ===== MODO ESCURO / ALTO CONTRASTE ===== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cor-primaria: #8AB4F8;
+        --cor-secundaria: #7BDCB5;
+        --cor-destaque: #FFD166;
+        --cor-texto: #FFFFFF;
+        --cor-texto-claro: #E5E7EB;
+        --cor-fundo: #121212;
+        --cor-fundo-suave: #1F2937;
+        --cor-borda: #6B7280;
+    }
+
+    body {
+        background-color: var(--cor-fundo);
+        color: var(--cor-texto);
+    }
+
+    a {
+        color: var(--cor-primaria);
+    }
+}
